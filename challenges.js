@@ -32,3 +32,24 @@ function countApplesAndOranges(startHouse, endHouse, positionApples, positionOra
 
 countApplesAndOranges(7, 11, 5, 15, [-2, 2, 1], [5, -6]);
 countApplesAndOranges(7, 10, 4, 12, [2, 3, -4], [3, -2, -4]);
+
+
+function viralAdvertising(n) {
+    // Write your code here
+    let invitations = 5;
+    let dayOne = 2;
+    let likes = 2;
+    if (n === 1) {
+        return dayOne;
+    }
+    for (let i = 1; i < n; i++){
+        let todayLikes = ((Math.floor(invitations / 2)));
+        invitations = todayLikes * 3;
+        likes += (Math.floor(invitations/2));
+    }
+
+    return likes;
+
+}
+console.log(viralAdvertising(4));
+
