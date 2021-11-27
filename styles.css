@@ -1,5 +1,5 @@
 
-.header{
+#header{
     display:flex;
     justify-content: space-between;
     position: fixed;
@@ -10,8 +10,11 @@
 }
 .content{
     margin-top: 200px;
+    align-content: center;
+    justify-content: center;
+   
 }
-.header-image{
+#header-img {
     width: 200px;
     height: auto;
 }
@@ -19,10 +22,32 @@
     font-size: 2.2em;
 }
 .nav-bar{
-    display: flex;
+    display: inline-flex;
     text-decoration: none;
     list-style: none;
 }
 .nav-bar li{
     margin:20px;
+}
+.flexbox{
+    display: flex;
+}
+#video{
+    height: 25%;
+    width: 45%;
+}
+
+.submit-button{
+    width: 65px;
+    height: 35px;
+}
+
+@media  (max-width : 800px)  {
+     html {
+         font-size: 60%;
+     }
+    .vid{
+         height: 45%;
+         width: 100%;
+    }
 }
