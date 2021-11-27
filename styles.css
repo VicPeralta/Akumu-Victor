@@ -1,0 +1,28 @@
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: white;
+    
+}
+.content{
+    margin-top: 200px;
+}
+.header-image{
+    width: 200px;
+    height: auto;
+}
+.site-name{
+    font-size: 2.2em;
+}
+.nav-bar{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-bar li{
+    margin:20px;
+}
